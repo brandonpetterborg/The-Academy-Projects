@@ -1,0 +1,7 @@
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\bin\Debug\dailyReport.exe.config
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\bin\Debug\dailyReport.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\bin\Debug\dailyReport.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\obj\Debug\dailyReport.csprojAssemblyReference.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\obj\Debug\dailyReport.csproj.CoreCompileInputs.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\obj\Debug\dailyReport.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\dailyReport\dailyReport\obj\Debug\dailyReport.pdb

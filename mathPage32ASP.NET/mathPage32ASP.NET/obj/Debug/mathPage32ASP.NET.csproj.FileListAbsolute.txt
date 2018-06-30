@@ -1,0 +1,7 @@
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\obj\Debug\mathPage32ASP.NET.csprojAssemblyReference.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\obj\Debug\mathPage32ASP.NET.csproj.CoreCompileInputs.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\bin\Debug\mathPage32ASP.NET.exe.config
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\bin\Debug\mathPage32ASP.NET.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\bin\Debug\mathPage32ASP.NET.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\obj\Debug\mathPage32ASP.NET.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\mathPage32ASP.NET\mathPage32ASP.NET\obj\Debug\mathPage32ASP.NET.pdb

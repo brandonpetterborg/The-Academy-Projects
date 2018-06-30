@@ -16,16 +16,16 @@ namespace booleanASPpage37
             string DUI = Console.ReadLine();
             Console.WriteLine("How many speeding tickets do you have?");
             int tickets = Int32.Parse(Console.ReadLine());
-           // bool qualified = (age > 15 && DUI = no);
-           if(age > 15 && DUI == "no" && tickets <= 3)
-            {
-                Console.WriteLine("Qualified");
-            }
-           else
-            {
-                Console.WriteLine("Not qualified");
-            }
-            Console.ReadLine();
+          
+           //if(age > 15 && DUI == "no" && tickets <= 3)
+           // {
+           //     Console.WriteLine("Qualified");
+           // }
+           //else
+           // {
+           //     Console.WriteLine("Not qualified");
+           // }
+           // Console.ReadLine();
         }
     }
 }

@@ -5,3 +5,10 @@ C:\Users\12088\Documents\GitHub\The-Academy-Projects\booleanASPpage37\booleanASP
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\booleanASPpage37\booleanASPpage37\bin\Debug\booleanASPpage37.pdb
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.exe
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\bin\Debug\booleanASPpage37.exe.config
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\bin\Debug\booleanASPpage37.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\bin\Debug\booleanASPpage37.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.csprojAssemblyReference.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.csproj.CoreCompileInputs.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\ConsoleApp1\booleanASPpage37\booleanASPpage37\obj\Debug\booleanASPpage37.pdb

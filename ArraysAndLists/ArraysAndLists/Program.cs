@@ -25,20 +25,36 @@ namespace ArraysAndLists
             //Console.WriteLine(stringList[index]);
             //Console.ReadLine();
 
+            //PAGE 52
+            //1.
             //string[] stringArray = { "red", "blue", "green", "orange" };
             //Console.WriteLine("input text");
             //string userInput = Console.ReadLine();
 
             //for (int i = 0; i < stringArray.Length; i++)
             //{
-            //    Console.WriteLine(stringArray[i] +" " + userInput);
+            //    Console.WriteLine(stringArray[i] + " " + userInput);
             //}
             //Console.ReadLine();
 
-            for (int i = 0; i - 1 < i++; i++)
+            //.2
+            //for (int i = 0; i - 1 < i++; i++)
+            //{
+            //    Console.WriteLine("oh dear");
+            //}
+
+            //4.
+            string[] stringArray = { "red", "blue", "green", "orange" };
+            Console.WriteLine("input text");
+            string userInput = Console.ReadLine();
+
+            for (int i = 0; i <= 3; i++)
             {
-                Console.WriteLine("oh dear");
+                Console.WriteLine(stringArray[i] + " " + userInput);
             }
+            Console.ReadLine();
+
+            //5
 
             //ARRAY!!
             //int[] numArray = new int[5];

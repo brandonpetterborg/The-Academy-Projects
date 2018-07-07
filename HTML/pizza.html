@@ -53,7 +53,7 @@
 	.form-output p {
 		padding: 0 0 0 10px;
 		font-size: 1.2em;
-		color: #42db1c;
+		color: #8b0000;
 	}
 	#total {
 		text-align:center;
@@ -64,11 +64,11 @@
 	</style>
 
 	<div class="form">
-	<h1>Order Pizza</h1>
+	<h1>Create Your Pizza</h1>
 	<form action="">
 	<!-- pizza size selection-->
 	<div class="pizza-size">
-		<p>Select pizza size</p>
+		<p>size</p>
 		<input type="radio" class="size" id="Personal Pizza" name="size" value="6" checked>Personal<br>
 		<input type="radio" class="size" id="Medium Pizza" name="size" value="10">Medium<br>
 		<input type="radio" class="size" id="Large Pizza" name="size" value="14">Large<br>
@@ -76,7 +76,7 @@
 	</div>
 	<!-- meats-->
 	<div class="pizza-meat">
-		<p>Select your meat</p>
+		<p>meats</p>
 		<input type="checkbox" class="meat" name="Pepperoni" value="1.00">Pepperoni<br>
 		<input type="checkbox" class="meat" name="Sausage" value="1.00">Sausage<br>
 		<input type="checkbox" class="meat" name="Canadian Bacon" value="1.00">Canadian Bacon<br>
@@ -93,7 +93,7 @@
 	</div>
 	<!-- crust -->	
 	<div class="pizza-crust">
-		<p>Select crust</p>
+		<p>crust</p>
 		<input type="radio" name="crust" value="0" id="Plain Crust" checked>Plain Crust<br>
 		<input type="radio" name="crust" value="0" id="Garlic Butter Crust">Garlic Butter Crust<br>
 		<input type="radio" name="crust" value="3" id="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
@@ -102,7 +102,7 @@
 	</div>
 	<!-- sauce -->	
 	<div class="pizza-sauce">
-	<p>Select sauce</p>
+	<p>sauce</p>
 		<input type="radio" name="sauce" value="0" id="Marinara Sauce" checked>Marinara sauce<br>
 		<input type="radio" name="sauce" value="0" id="White Sauce">White sauce<br>
 		<input type="radio" name="sauce" value="0" id="Barbecue">Barbecue<br>
@@ -110,7 +110,7 @@
 	</div>
 	<!-- veggies -->	
 	<div class="pizza-veggie">
-	<p>Select your veggie</p>
+	<p>veggies</p>
 		<input type="checkbox" class="veggie" value="1.00" name="Tomatoes">Tomatoes<br>
 		<input type="checkbox" class="veggie" value="1.00" name="Onions">Onions<br>
 		<input type="checkbox" class="veggie" value="1.00" name="Olives">Olives<br>
@@ -159,7 +159,7 @@
 	}
 	}
 	}
-	// console.log(stringMeat); To check that the variable is initialized
+	
 	result = result + parseFloat(priceMeat); // Adds to the total, make sure its not inside loop
 	document.getElementById("meatString").innerHTML = '<li>' + stringMeat + '</li>';
 	document.getElementById("meatPrice").innerHTML = '<li> Subtotal: $' + priceMeat + '</li>';
@@ -195,7 +195,7 @@
 	for(var i=0; i < veggieCheck; i++) {
 	if (checks[i].checked === true) { // Goes through all the alternatives and checks if they are checked or not
 	veggieName += checks[i].name + "<br>"; 
-	veggieValue += parseFloat(checks[i].value); // Convert it from a string to a number
+	veggieValue += parseFloat(checks[i].value); // Convert from a string to a number
 	if (veggieCount === 0) { // Only used to first iteration
 	veggieValue = 0;
 	veggieCount = veggieCount + 1;

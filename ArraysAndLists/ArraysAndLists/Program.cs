@@ -17,15 +17,28 @@ namespace ArraysAndLists
             //Console.WriteLine(intList[index]);
             //Console.ReadLine();
             //END LIST!!
-            List<string> stringList = new List<string>();
-            stringList.Add("A");
-            stringList.Add("B");
-            Console.WriteLine("Select index");
-            int index = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(stringList[index]);
-            Console.ReadLine();
+            //List<string> stringList = new List<string>();
+            //stringList.Add("A");
+            //stringList.Add("B");
+            //Console.WriteLine("Select index");
+            //int index = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(stringList[index]);
+            //Console.ReadLine();
 
+            //string[] stringArray = { "red", "blue", "green", "orange" };
+            //Console.WriteLine("input text");
+            //string userInput = Console.ReadLine();
 
+            //for (int i = 0; i < stringArray.Length; i++)
+            //{
+            //    Console.WriteLine(stringArray[i] +" " + userInput);
+            //}
+            //Console.ReadLine();
+
+            for (int i = 0; i - 1 < i++; i++)
+            {
+                Console.WriteLine("oh dear");
+            }
 
             //ARRAY!!
             //int[] numArray = new int[5];

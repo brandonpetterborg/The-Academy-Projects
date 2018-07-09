@@ -27,19 +27,19 @@ namespace ArraysAndLists
 
             //PAGE 52
             //1.
-            ////List<string> stringList = new List<string> { "red", "blue", "green", "orange", "purple", "gold", "maroon", "black", "white", "yellow", "red", "blue"};
-            ////Console.WriteLine("Select text to search for");
-            ////string userInput = Console.ReadLine();
+            List<string> stringList = new List<string> { "red", "blue", "green", "orange", "purple", "gold", "maroon", "black", "white", "yellow", "red", "blue" };
+            Console.WriteLine("Select text to search for");
+            string userInput = Console.ReadLine();
+          
+            for (int i = 0; i < stringList.Count; i++)
+            {
+                if (stringList[i] == userInput)
+                {
+                    Console.WriteLine(i);
 
-            ////for (int i = 0; i < stringList.Count; i++)
-            ////{
-            ////    if (stringList[i] == userInput)
-            ////    {
-            ////        Console.WriteLine(stringList.IndexOf(userInput));
-
-            ////    }
-            ////}   
-            ////Console.ReadLine();
+                }
+            }
+            Console.ReadLine();
 
             //.2
             //for (int i = 0; i - 1 < i++; i++)
@@ -93,9 +93,7 @@ namespace ArraysAndLists
             //Console.WriteLine(numArray[index]);
             //Console.ReadLine();
             //END ARRAY!!
-            methods.AddInput();
-            methods.MultiplyInput();
-            methods.DivideInput();
+
 
         }
     }

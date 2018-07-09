@@ -10,9 +10,15 @@ namespace CallingMethods
     {
         static void Main(string[] args)
         {
-            methods.AddInput();
-            methods.MultiplyInput();
-            methods.DivideInput();
+            Console.WriteLine("Choose a number.");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            //int number1 = Convert.ToInt32(Console.ReadLine());
+
+
+            methods.AddInput(number1);
+            methods.MultiplyInput(number1);
+            methods.DivideInput(number1);
+                
         }
     }
 }

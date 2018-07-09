@@ -8,26 +8,27 @@ using System.Threading.Tasks;
 
     public class methods
     {
-        public static void AddInput()
+        public static int AddInput(int number1)
         {
-            Console.WriteLine("Choose a number.");
-            int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(number1 + 2 + " This is your number plus 2.");
+         
+            Console.WriteLine(number1 + 2);
+            int output = Convert.ToInt32(Console.Read());
             Console.ReadLine();
+            return output;
 
         }
-        public static void MultiplyInput()
+        public static int MultiplyInput(int number1)
         {
-            Console.WriteLine("Choose a number.");
-            int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(number1 * 2 + " This is your number multiplied by 2");
-            Console.ReadLine();
-        }
-        public static void DivideInput()
+        Console.WriteLine(number1 * 2);
+        int output = Convert.ToInt32(Console.Read());
+        Console.ReadLine();
+        return output;
+    }
+        public static int DivideInput(int number1)
         {
-            Console.WriteLine("Choose a number.");
-            int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(number1 / 2 + " This is your number divided by 2");
-            Console.ReadLine();
-        }
+        Console.WriteLine(number1 / 2);
+        int output = Convert.ToInt32(Console.Read());
+        Console.ReadLine();
+        return output;
+    }
     }

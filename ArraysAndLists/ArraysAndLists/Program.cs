@@ -6,7 +6,7 @@ namespace ArraysAndLists
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             //LIST!!
             //List<int> intList = new List<int>();
@@ -27,15 +27,19 @@ namespace ArraysAndLists
 
             //PAGE 52
             //1.
-            //string[] stringArray = { "red", "blue", "green", "orange" };
-            //Console.WriteLine("input text");
-            //string userInput = Console.ReadLine();
+            ////List<string> stringList = new List<string> { "red", "blue", "green", "orange", "purple", "gold", "maroon", "black", "white", "yellow", "red", "blue"};
+            ////Console.WriteLine("Select text to search for");
+            ////string userInput = Console.ReadLine();
 
-            //for (int i = 0; i < stringArray.Length; i++)
-            //{
-            //    Console.WriteLine(stringArray[i] + " " + userInput);
-            //}
-            //Console.ReadLine();
+            ////for (int i = 0; i < stringList.Count; i++)
+            ////{
+            ////    if (stringList[i] == userInput)
+            ////    {
+            ////        Console.WriteLine(stringList.IndexOf(userInput));
+
+            ////    }
+            ////}   
+            ////Console.ReadLine();
 
             //.2
             //for (int i = 0; i - 1 < i++; i++)
@@ -44,15 +48,15 @@ namespace ArraysAndLists
             //}
 
             //4.
-            string[] stringArray = { "red", "blue", "green", "orange" };
-            Console.WriteLine("input text");
-            string userInput = Console.ReadLine();
+            //string[] stringArray = { "red", "blue", "green", "orange" };
+            //Console.WriteLine("input text");
+            //string userInput = Console.ReadLine();
 
-            for (int i = 0; i <= 3; i++)
-            {
-                Console.WriteLine(stringArray[i] + " " + userInput);
-            }
-            Console.ReadLine();
+            //for (int i = 0; i <= 3; i++)
+            //{
+            //    Console.WriteLine(stringArray[i] + " " + userInput);
+            //}
+            //Console.ReadLine();
 
             //5
 
@@ -89,6 +93,10 @@ namespace ArraysAndLists
             //Console.WriteLine(numArray[index]);
             //Console.ReadLine();
             //END ARRAY!!
+            methods.AddInput();
+            methods.MultiplyInput();
+            methods.DivideInput();
+
         }
     }
 }

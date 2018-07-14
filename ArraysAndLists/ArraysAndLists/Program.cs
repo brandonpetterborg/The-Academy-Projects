@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace ArraysAndLists
 {
@@ -28,18 +28,38 @@ namespace ArraysAndLists
             //PAGE 52
             //1.
             List<string> stringList = new List<string> { "red", "blue", "green", "orange", "purple", "gold", "maroon", "black", "white", "yellow", "red", "blue" };
-            Console.WriteLine("Select text to search for");
-            string userInput = Console.ReadLine();
-          
-            for (int i = 0; i < stringList.Count; i++)
+           
+         
+            foreach (var color in stringList)
             {
-                if (stringList[i] == userInput)
-                {
-                    Console.WriteLine(i);
-
-                }
+                var duplicateKeys = stringList.GroupBy(x => x)
+                     .Where(group => group.Count() > 1)
+                     .Select(group => group.Key).ToList();
+                Console.WriteLine(color);
+                Console.WriteLine();
             }
+
             Console.ReadLine();
+
+
+
+
+
+            //for (int i = 0; i < stringList.Count; i++)
+            //{
+            //    if (stringList[i] == userInput)
+            //    {
+            //        Console.WriteLine(i);
+
+            //    }
+            //    if (stringList[i] != userInput)
+            //    {
+            //        Console.WriteLine("Sorry that is not in the list.");
+            //        break;
+            //    }
+            //}
+          
+            //Console.ReadLine();
 
             //.2
             //for (int i = 0; i - 1 < i++; i++)
@@ -94,7 +114,7 @@ namespace ArraysAndLists
             //Console.ReadLine();
             //END ARRAY!!
 
-
+            
         }
     }
 }

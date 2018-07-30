@@ -15,6 +15,7 @@ namespace GitHub123
             employee1.LastName = "Student";
             employee1.SayName();
             Console.ReadLine();
+            employee1.EmployeeId = 1;
 
         }
     }

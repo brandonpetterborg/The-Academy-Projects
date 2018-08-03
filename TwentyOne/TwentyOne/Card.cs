@@ -16,4 +16,11 @@ namespace TwentyOne
         public string Suit { get; set; }
         public string Face { get; set; }
     }
+    public enum Suit
+    {
+        Clubs, 
+        Diamonds,
+        Hearts,
+        Spades
+    }
 }

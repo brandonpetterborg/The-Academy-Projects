@@ -37,7 +37,9 @@ namespace GitHub112
 
             Console.WriteLine("input number");
             string userInputString = Console.ReadLine();
+            string = operation;
             int userInput2 = Convert.ToInt32(userInputString);
+            int number2 = Convert.ToInt32(operation)
             int.TryParse(userInputString, out userInput2);
             MathOperation mathOperation3 = new MathOperation();
             mathOperation3.Addition(userInput2);

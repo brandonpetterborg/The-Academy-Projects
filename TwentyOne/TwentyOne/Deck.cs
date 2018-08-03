@@ -8,7 +8,9 @@ namespace TwentyOne
 {
     public class Deck
     {
-        public Deck()
+        public Deck();
+        public List<Card> Cards { get; set; }
+        public void shuffle(int times = 1)
         {
             Cards = new List<Card>();
             List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
@@ -30,6 +32,6 @@ namespace TwentyOne
 
 
         }
-        public List<Card> Cards { get; set; }
+      
     }
 }

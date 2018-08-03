@@ -10,19 +10,19 @@ namespace GitHub112
     {
 
 
-        //public void Addition(int number1)
-        //{
-        //    Console.WriteLine(number1 + 2);
-        //    Console.ReadLine();
-            
-        //}
-        //public void Addition(decimal number2)
-        //{
-        //    Console.WriteLine(number2 + 1);
-        //    Console.ReadLine();
-          
-        //}
-        public void Addition(int number3)
+        public void Addition(int number1)
+        {
+            Console.WriteLine(number1 + 2);
+            Console.ReadLine();
+
+        }
+        public void Addition(decimal number2)
+        {
+            Console.WriteLine(number2 + 1);
+            Console.ReadLine();
+
+        }
+        public void Addition(string number3)
             {
             Console.WriteLine(number3 + 5);
             Console.ReadLine();

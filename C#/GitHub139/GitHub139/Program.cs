@@ -8,7 +8,7 @@ namespace GitHub139
 {
     public class Author
     {
-        public static Main();
+        public static void Main();
 
 
         private string name;
@@ -22,7 +22,7 @@ namespace GitHub139
 
         }
 
-        public string Name
+        publi string Name
         {
             get { return name; }
             set { name = value; }

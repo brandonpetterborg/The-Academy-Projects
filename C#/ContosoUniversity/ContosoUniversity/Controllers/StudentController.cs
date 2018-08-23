@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.Models;
 
-namespace ContosoUniversity1.Controllers
+namespace ContosoUniversity.Controllers
 {
     public class StudentController : Controller
     {

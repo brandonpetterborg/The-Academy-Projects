@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Order Pizza</title>
+	</head>
+	<body>
+	<style>
+	body {
+	background: #eef2ed;
+	}
+	h1, h2 {
+	text-align:center;
+	font-family: Helvetica;
+	color: #42db1c;
+	}
+	.form, .form-output {
+	max-width: 600px;
+	border: solid black 1px;
+	margin: 0 auto;
+	border-radius: 1%;
+	background: #f4e79f;
+	text-transform: uppercase;
+	font-family: helvetica;
+	margin-top: 20px;
+	}
+	p {
+	color: red;
+	font-size: 1.3em;
+	}
+	.pizza-size, .pizza-meat, .pizza-cheese, .pizza-crust, .pizza-veggie, .pizza-sauce
+	{
+	padding: 10px 0px 10px 10px;
+	}
+	#button {
+	color:white;
+	background: #42db1c;
+	margin: 0 auto;
+	display:block;
+	width: 80%;
+	cursor: pointer !important;
+	padding: 10px 0px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	}
+	li {
+	list-style-type: none;
+	}
+	li.price, ul.price {
+	color: red;
+	}
+	.form-output p {
+	padding: 0 0 0 10px;
+	font-size: 1.2em;
+	color: #42db1c;
+	}
+	#total {
+	text-align:center;
+	color: red;
+	font-weight: 700;
+	}
+	</style>
+	<div class="form">
+	<h1>Order Pizza</h1>
+	<form action="">
+	<!-- size selection: Personal, Medium, Large, Extra Large -->
+	<div class="pizza-size">
+	<p>Select pizza size</p>
+	<input type="radio" class="size" id="Personal Pizza" name="size" value="6" checked>Personal<br>
+	<input type="radio" class="size" id="Medium Pizza" name="size" value="10">Medium<br>
+	<input type="radio" class="size" id="Large Pizza" name="size" value="14">Large<br>
+	<input type="radio" class="size" id="Extra large Pizza" name="size" value="16">Extra large
+	</div>
+	<!-- Check boxes for multiple selection of meat: Pepperoni, Sausage, Canadian Bacon, Ground Beef, Anchovy, Chicken -->
+	<div class="pizza-meat">
+	<p>Select your meat</p>
+	<input type="checkbox" class="meat" name="Pepperoni" value="1.00">Pepperoni<br>
+	<input type="checkbox" class="meat" name="Sausage" value="1.00">Sausage<br>
+	<input type="checkbox" class="meat" name="Canadian Bacon" value="1.00">Canadian Bacon<br>
+	<input type="checkbox" class="meat" name="Ground Beef" value="1.00">Ground Beef<br>
+	<input type="checkbox" class="meat" name="Anchovy" value="1.00">Anchovy<br>
+	<input type="checkbox" class="meat" name="Chicken" value="1.00">Chicken<br>
+	</div>
+	<!-- Radio buttons for cheese selection: Regular, No cheese, Extra Cheese -->	
+	<div class="pizza-cheese">
+	<p>Select cheese</p>
+	<input type="radio" class="cheese" name="cheese" id="Regular" value="0" checked>Regular<br>
+	<input type="radio" class="cheese" name="cheese" id="No cheese" value="0">No cheese<br>
+	<input type="radio" class="cheese" name="cheese" id="Extra Cheese" value="3">Extra Cheese<br>
+	</div>
+	<!-- Radio buttons for crust selection: Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust, Spicy Crust, and House Special Crust -->	
+	<div class="pizza-crust">
+	<p>Select crust</p>
+	<input type="radio" name="crust" value="0" id="Plain Crust" checked>Plain Crust<br>
+	<input type="radio" name="crust" value="0" id="Garlic Butter Crust">Garlic Butter Crust<br>
+	<input type="radio" name="crust" value="3" id="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+	<input type="radio" name="crust" value="0" id="Spicy Crust">Spicy Crust<br>
+	<input type="radio" name="crust" value="0" id="House Special Crust">House Special Crust<br>
+	</div>
+	<!-- Radio buttons for sauce selection: Marinara sauce, White sauce, Barbecue, No Sauce -->	
+	<div class="pizza-sauce">
+	<p>Select sauce</p>
+	<input type="radio" name="sauce" value="0" id="Marinara Sauce" checked>Marinara sauce<br>
+	<input type="radio" name="sauce" value="0" id="White Sauce">White sauce<br>
+	<input type="radio" name="sauce" value="0" id="Barbecue">Barbecue<br>
+	<input type="radio" name="sauce" value="0" id="No Sauce">No sauce<br>
+	</div>
+	<!-- Multiple selection of veggie: Tomatoes, Onions, Olives, Green Peppers, Mushrooms, Pineapple, Spinach, Jalapeño -->	
+	<div class="pizza-veggie">
+	<p>Select your veggie</p>
+	<input type="checkbox" class="veggie" value="1.00" name="Tomatoes">Tomatoes<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Onions">Onions<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Olives">Olives<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Green Peppers">Green Peppers<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Mushrooms">Mushrooms<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Pineapple">Pineapple<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Spinach">Spinach<br>
+	<input type="checkbox" class="veggie" value="1.00" name="Jalapeño">Jalapeño<br>
+	</div>
+	<br><br>
+	<input type="button" id="button" onclick="calcPrice()" value="Order">
+	<br><br>
+	</form>
+	</div>
+	<div id="form-container">
+	</body>
+	<script>
+	function calcPrice() {
+	function createForm() {
+	var output = document.getElementById("form-container").innerHTML = '<div class="form-output" id="form-output"><h2>Your order</h2> <p>Selected size<p><ul><li id="pizzaSize"><li class="price" id="sizePrice"></ul><p>Selected meat<p><ul id="meatString"></ul><ul class="price" id="meatPrice"></ul><p>Selected cheese<p><ul><li id="pizzaCheese"><li class="price" id="cheesePrice"></ul><p>Selected crust<p><ul><li id="pizzaCrust"><li class="price" id="crustPrice"></ul><p>Selected sauce<p><ul><li id="pizzaSauce"><li class="price" id="saucePrice"></ul><p>Selected Veggie<p><ul id="veggieString"></ul><ul class="price" id="veggiePrice"></ul><p id="total"></p></div></div>';
+	}
+	
+	createForm()
+	
+	// Pizza Size
+	var size = document.querySelector('input[class="size"]:checked').value; // Get the price for the checked radio button 
+	var nameSize = document.querySelector('input[class="size"]:checked').id; // Get the id for the checked radio button
+	var priceSize = parseFloat(size); // Convert from string to number
+	document.getElementById("pizzaSize").innerHTML = '<li>' + nameSize + '</li>';
+	document.getElementById("sizePrice").innerHTML = '<li> Subtotal: $' + priceSize + '</li>';
+	var result = priceSize; // Adds to the total result
+	
+	//	Meat Selection
+	var meatCheck = document.querySelectorAll('input[class="meat"]').length; // Get the number of check boxes
+	var checks = document.getElementsByClassName('meat'); // Get all the veggie select
+	var stringMeat = ""; 
+	var priceMeat = 0;
+	var meatCount = 0; // Used for setting the first check for free
+	for(var i=0; i < meatCheck; i++) {
+	if (checks[i].checked === true) { // Goes through all the alternatives and checks if they are checked or not
+	stringMeat += checks[i].name + "<br>"; 
+	priceMeat += parseFloat(checks[i].value); // Convert it from a string to a number
+	if (meatCount === 0) { // Only used to first iteration
+	priceMeat = 0;
+	meatCount = meatCount + 1;
+	}
+	}
+	}
+	// console.log(stringMeat); To check that the variable is initialized
+	result = result + parseFloat(priceMeat); // Adds to the total, make sure its not inside loop
+	document.getElementById("meatString").innerHTML = '<li>' + stringMeat + '</li>';
+	document.getElementById("meatPrice").innerHTML = '<li> Subtotal: $' + priceMeat + '</li>';
+	
+	// Cheese Selection
+	var priceCheese = document.querySelector('input[class="cheese"]:checked').value;
+	var nameCheese = document.querySelector('input[class="cheese"]:checked').id; 
+	document.getElementById("pizzaCheese").innerHTML = '<li>' + nameCheese + '</li>';
+	document.getElementById("cheesePrice").innerHTML = '<li> Subtotal: $' + priceCheese + '</li>';
+	var intpriceCheese = parseFloat(priceCheese);
+	result = result + intpriceCheese;
+	
+	// Crust Selection
+	var priceCrust = document.querySelector('input[name="crust"]:checked').value;
+	var nameCrust = document.querySelector('input[name="crust"]:checked').id; 
+	document.getElementById("pizzaCrust").innerHTML = '<li>' + nameCrust + '</li>';
+	document.getElementById("crustPrice").innerHTML = '<li> Subtotal: $' + priceCrust + '</li>';
+	var intpriceCrust = parseFloat(priceCrust);
+	result = result + parseFloat(intpriceCrust);
+	
+	// Sauce Selection
+	var priceSauce = document.querySelector('input[name="sauce"]:checked').value;
+	var nameSauce = document.querySelector('input[name="sauce"]:checked').id; 
+	document.getElementById("pizzaSauce").innerHTML = '<li>' + nameSauce + '</li>';
+	document.getElementById("saucePrice").innerHTML = '<li> Subtotal: $' + priceSauce + '</li>';
+	
+	// Veggie Selection
+	var veggieCheck = document.querySelectorAll('input[class="veggie"]').length; // Get the number of check boxes
+	var checks = document.getElementsByClassName('veggie'); // Get all the veggie select
+	var veggieName = ""; 
+	var veggieValue = 0;
+	var veggieCount = 0; // Used for setting the first check for free
+	for(var i=0; i < veggieCheck; i++) {
+	if (checks[i].checked === true) { // Goes through all the alternatives and checks if they are checked or not
+	veggieName += checks[i].name + "<br>"; 
+	veggieValue += parseFloat(checks[i].value); // Convert it from a string to a number
+	if (veggieCount === 0) { // Only used to first iteration
+	veggieValue = 0;
+	veggieCount = veggieCount + 1;
+	}
+	}
+	}
+	// console.log(veggieName); To check that the variable is initialized
+	result = result + parseFloat(veggieValue); // Adds to the total, make sure its not inside loop
+	document.getElementById("veggieString").innerHTML = '<li>' + veggieName + '</li>';
+	document.getElementById("veggiePrice").innerHTML = '<li> Subtotal: $' + veggieValue + '</li>';
+	// Display total
+	
+	document.getElementById("total").innerHTML = "Total price: $" + result;
+	}	
+	</script>	
+<html>

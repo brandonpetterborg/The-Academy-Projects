@@ -5,3 +5,10 @@ C:\Users\12088\Documents\GitHub\The-Academy-Projects\incomePage33ASP.cs\incomePa
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.csproj.CoreCompileInputs.cache
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.exe
 C:\Users\12088\Documents\GitHub\The-Academy-Projects\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\bin\Debug\incomePage33ASP.cs.exe.config
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\bin\Debug\incomePage33ASP.cs.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\bin\Debug\incomePage33ASP.cs.pdb
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.csprojAssemblyReference.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.csproj.CoreCompileInputs.cache
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.exe
+C:\Users\12088\Documents\GitHub\The-Academy-Projects\C#\incomePage33ASP.cs\incomePage33ASP.cs\obj\Debug\incomePage33ASP.cs.pdb
